@@ -4,16 +4,6 @@ date = 2024-05-27T16:58:11-07:00
 draft = false
 +++
 
-<!-- I recently released my debut album, a labor of love!
-
-<div style="text-align: center;">
-    {{< figure src="/images/ESSAR_COVER.jpg" title="ESSAR" height=100 >}}
-</div>
-
-## {{< figure src="/images/ESSAR_COVER.jpg" title="ESSAR" height=100 >}}
-
-{{< youtube matAawZcC9s >}} -->
-
 ## An experiment in web dev: hugo + vercel 
 
 I coded up my own site - here's how and why. 
@@ -50,3 +40,60 @@ Hugo creates a "quickstart" folder enclosing the contents of your website. After
 {{< figure src="/images/vercelcode.jpg" >}} 
 
 I now have a shiny new website in my hands. This thing is *clean*. There's a lot of aesthetic work to be done, and I still have to build in subscription functionality so that I can email my network every time I post. Luckily there are free APIs for that :)
+
+### How to change Hugo theme colors
+
+After poking around, I found that the themes/typo folder rules all.
+The background color can be changed inside [/quickstart/themes/typo/assets/css/vars.css](https://github.com/tomfran/typo/blob/41599aedee2b257fe546e5f066aa3370116f028c/assets/css/vars.css).
+The font colors themselves I coded into a custom.css file, which I then referenced in the doctype body of baseof.html.
+At the bottom of baseof.html, there are several functions that allow you to set two different themes for dark and light mode and toggle between them.
+
+custom.css:
+    
+    :root { /* light mode */
+
+    --primary: rgb(36, 59, 95); /* so far only text is changing color */
+    --secondary: rgb(36, 59, 95);
+    --tertiary: rgb(36, 59, 95);
+    --content: rgb(36, 59, 95); /* ^^ */
+    }
+
+    /* Define CSS variables for dark mode */
+    .dark {
+        --primary: rgba(246, 242, 220); /* Brighter muted yellow for primary text in dark mode */
+        --content: rgba(246, 242, 220); /* Brighter muted yellow for general content text in dark mode */
+    }
+
+baseof.html:
+
+     <head>
+        {{ partial "head.html" . }}
+
+        {{ partial "head/css.html" . }}
+    </head>
+
+    ... stuff* ...
+
+
+    function isAuto() {
+        return document.body.classList.contains("auto");
+    }
+
+    function setTheme() {
+        ... stuff* ...
+    }
+
+    function invertBody() {
+        document.body.classList.toggle("dark");
+        document.body.classList.toggle("light");
+    }
+
+    if (isAuto()) {
+        window.matchMedia('(prefers-color-scheme: dark)').addListener(invertBody);
+    }
+
+    setTheme();
+
+The footer was editing by looking into /quickstart/themes/typo/layouts/partials/footer.html.
+
+*baseof.html: [github](https://github.com/tomfran/typo/blob/41599aedee2b257fe546e5f066aa3370116f028c/layouts/_default/baseof.html)

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en-us"
   dir="ltr">
 
@@ -14,9 +15,20 @@
 
 
 
-<link rel="stylesheet" href="/assets/combined.min.b357350626e456d3eb0a6cc6a6195c39ef417483bca875072ff17ad8b0c6db9c.css" media="all">
+
+<link rel="stylesheet" href="/assets/combined.min.216337488c08235d8da2a239447b59a9e2b0004442c7e3aea27abb5cbd7808ab.css" media="all">
+
+<link rel="stylesheet" href="http://localhost:1313/css/custom.min.ebf4c26ef8f05106e99ee8cd24229b4c3bcf21a3dbdcecbf36254145e00c1ad7.css">
 
 
+
+
+    
+
+
+<link rel="stylesheet" href="/assets/combined.min.216337488c08235d8da2a239447b59a9e2b0004442c7e3aea27abb5cbd7808ab.css" media="all">
+
+<link rel="stylesheet" href="http://localhost:1313/css/custom.min.ebf4c26ef8f05106e99ee8cd24229b4c3bcf21a3dbdcecbf36254145e00c1ad7.css">
 
   </head>
 
@@ -114,9 +126,7 @@
   
 
   <div class="single-content">
-    <!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<h2 id="an-experiment-in-web-dev-hugo--vercel">An experiment in web dev: hugo + vercel</h2>
+    <h2 id="an-experiment-in-web-dev-hugo--vercel">An experiment in web dev: hugo + vercel</h2>
 <p>I coded up my own site - here&rsquo;s how and why.</p>
 <p>I wanted a newsletter dedicated to my projects so I could keep my professional network updated on my latest activities. Given this, I could only see it happening if my newsletter was something I could own. I&rsquo;ve used Wordpress and Weebly for a long time, but have gradually witnessed more and more features put behind a paywall. Substack is new-ish (not guaranteed to last), Squarespace makes you pay for everything, and my Twitter account keeps getting spammed by bots. I was left a little lost&hellip; where on earth should I host my stuff?</p>
 <p>I&rsquo;m approaching this from the decades long timeline. I want this to be one of those kinda crappy outdated sites you can encounter 10 years later, where you&rsquo;re surprised it&rsquo;s still up, but it hasn&rsquo;t crashed yet.</p>
@@ -147,6 +157,57 @@ vercel
 </figure>
 
 <p>I now have a shiny new website in my hands. This thing is <em>clean</em>. There&rsquo;s a lot of aesthetic work to be done, and I still have to build in subscription functionality so that I can email my network every time I post. Luckily there are free APIs for that :)</p>
+<h3 id="how-to-change-hugo-theme-colors">How to change Hugo theme colors</h3>
+<p>After poking around, I found that the themes/typo folder rules all.
+The background color can be changed inside <a href="https://github.com/tomfran/typo/blob/41599aedee2b257fe546e5f066aa3370116f028c/assets/css/vars.css">/quickstart/themes/typo/assets/css/vars.css</a>.
+The font colors themselves I coded into a custom.css file, which I then referenced in the doctype body of baseof.html.
+At the bottom of baseof.html, there are several functions that allow you to set two different themes for dark and light mode and toggle between them.</p>
+<p>custom.css:</p>
+<pre><code>:root { /* light mode */
+
+--primary: rgb(36, 59, 95); /* so far only text is changing color */
+--secondary: rgb(36, 59, 95);
+--tertiary: rgb(36, 59, 95);
+--content: rgb(36, 59, 95); /* ^^ */
+}
+
+/* Define CSS variables for dark mode */
+.dark {
+    --primary: rgba(246, 242, 220); /* Brighter muted yellow for primary text in dark mode */
+    --content: rgba(246, 242, 220); /* Brighter muted yellow for general content text in dark mode */
+}
+</code></pre>
+<p>baseof.html:</p>
+<pre><code> &lt;head&gt;
+    {{ partial &quot;head.html&quot; . }}
+
+    {{ partial &quot;head/css.html&quot; . }}
+&lt;/head&gt;
+
+... stuff* ...
+
+
+function isAuto() {
+    return document.body.classList.contains(&quot;auto&quot;);
+}
+
+function setTheme() {
+    ... stuff* ...
+}
+
+function invertBody() {
+    document.body.classList.toggle(&quot;dark&quot;);
+    document.body.classList.toggle(&quot;light&quot;);
+}
+
+if (isAuto()) {
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(invertBody);
+}
+
+setTheme();
+</code></pre>
+<p>The footer was editing by looking into /quickstart/themes/typo/layouts/partials/footer.html.</p>
+<p>*baseof.html: <a href="https://github.com/tomfran/typo/blob/41599aedee2b257fe546e5f066aa3370116f028c/layouts/_default/baseof.html">github</a></p>
 
     
   </div>
@@ -166,7 +227,7 @@ vercel
     </div>
 
     <footer>
-      <p> infused with magic, &lt;3 & music from california
+      <p> scribbling in the margins
 </p>
 
 
@@ -203,7 +264,7 @@ vercel
     window.matchMedia('(prefers-color-scheme: dark)').addListener(invertBody);
   }
 
-  setTheme();
+  setTheme(); 
 
 </script>
 
