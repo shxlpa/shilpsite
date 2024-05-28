@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on SHILPA</title>
+    <link>http://localhost:62796/posts/</link>
+    <description>Recent content in Posts on SHILPA</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 May 2024 16:58:11 -0700</lastBuildDate>
+    <atom:link href="http://localhost:62796/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cuttingboards</title>
+      <link>http://localhost:62796/posts/cuttingboards/</link>
+      <pubDate>Mon, 27 May 2024 16:58:11 -0700</pubDate>
+      <guid>http://localhost:62796/posts/cuttingboards/</guid>
+      <description>I make cutting boards and this is my blog telling you about them. HEHE!&#xA;Here is an image from the static folder:</description>
+    </item>
+  </channel>
+</rss>
