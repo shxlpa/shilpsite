@@ -9,11 +9,11 @@
     <lastBuildDate>Mon, 27 May 2024 16:58:11 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Cuttingboards</title>
-      <link>http://localhost:1313/posts/cuttingboards/cuttingboards/</link>
+      <title>ESSAR: My Debut Album</title>
+      <link>http://localhost:1313/posts/cuttingboards/</link>
       <pubDate>Mon, 27 May 2024 16:58:11 -0700</pubDate>
-      <guid>http://localhost:1313/posts/cuttingboards/cuttingboards/</guid>
-      <description>I make cutting boards and this is my blog telling you about them. HEHE!&#xA;Here is an image from the static folder:</description>
+      <guid>http://localhost:1313/posts/cuttingboards/</guid>
+      <description> </description>
     </item>
   </channel>
 </rss>

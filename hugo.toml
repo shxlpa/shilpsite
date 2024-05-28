@@ -19,9 +19,14 @@ theme = 'auto'
 # Intro on main page, content is markdown
 homeIntroTitle = 'Hi!'
 homeIntroContent = """
-I'm Shilpa. You're probably someone I admire and want to keep updated on my life. 
-This is a repository for the coolest things I've worked on.
-I love making things.
+I'm SHILPA, a musician and electrical engineer. I study at UCLA and I have upcoming jobs in electric boats and space manufacturing. 
+I released my debut album, ESSAR, in Dec 2023 - stay tuned for my first ever music video coming out this summer.
+
+This is a space for me to keep my network updated on my projects. 
+
+I'll post every [sometimes](https://waitbutwhy.com/), and I promise not to spam you - I just hope this is a cool way to keep everyone updated with my life.
+
+What to expect: I *create* in areas spanning music production, the internet of things, microcontrollers, web development, woodworking, DIY musical instruments, arranging/composing musical pieces, and general full-stack code development + hardware. 
 """
 
 # Collection to display on home
