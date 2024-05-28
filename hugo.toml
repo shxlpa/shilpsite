@@ -1,6 +1,6 @@
 baseURL = "http://localhost:2002/"
 languageCode = 'en-us'
-title = 'SHILPA'
+title = 'SHXLPA'
 theme = 'Typo'
 
 [taxonomies]
@@ -17,20 +17,17 @@ description = "SHILPA's projects"
 theme = 'auto'
 
 # Intro on main page, content is markdown
-homeIntroTitle = 'Hi!'
+homeIntroTitle = "I'm Shilpa, a musician & electrical engineer from LA."
 homeIntroContent = """
-I'm SHILPA, a musician and electrical engineer. I study at UCLA and I have upcoming jobs in electric boats and space manufacturing. 
-I released my debut album, ESSAR, in Dec 2023 - stay tuned for my first ever music video coming out this summer.
+This is a newsletter for my network. 
 
-This is a space for me to keep my network updated on my projects. 
+I post about my projects, including but not limited to DIY instruments, microcontrollers, audio production, woodworking, and full-stack software/hardware development.
 
-I'll post every [sometimes](https://waitbutwhy.com/), and I promise not to spam you - I just hope this is a cool way to keep everyone updated with my life.
-
-What to expect: I *create* in areas spanning music production, the internet of things, microcontrollers, web development, woodworking, DIY musical instruments, arranging/composing musical pieces, and general full-stack code development + hardware. 
+UCLA ECE '24
 """
 
 # Collection to display on home
-homeCollectionTitle = 'Posts'
+homeCollectionTitle = 'Projects'
 homeCollection = 'posts'
 
 # Lists parameters
@@ -56,15 +53,15 @@ url = "https://github.com/user"
 
 # Main menu pages
 [[params.menu]]
-name = "home"
+name = "Home"
 url = "/"
 
 [[params.menu]]
-name = "posts"
+name = "Projects"
 url = "/posts"
 
 [[params.menu]]
-name = "about"
+name = "Contact"
 url = "/about"
 
 # Syntax highligth on code blocks

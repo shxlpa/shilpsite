@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on SHILPA</title>
+    <title>Home on SHXLPA</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content in Home on SHILPA</description>
+    <description>Recent content in Home on SHXLPA</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 27 May 2024 16:58:11 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>ESSAR: My Debut Album</title>
+      <title>Building This Website</title>
       <link>http://localhost:1313/posts/cuttingboards/</link>
       <pubDate>Mon, 27 May 2024 16:58:11 -0700</pubDate>
       <guid>http://localhost:1313/posts/cuttingboards/</guid>
-      <description>I recently released my debut album, a labor of love!</description>
+      <description>An experiment in web dev: hugo + vercel I coded up my own site - here&amp;rsquo;s how and why.&#xA;I wanted a newsletter dedicated to my projects so I could keep my professional network updated on my latest activities. Given this, I could only see it happening if my newsletter was something I could own. I&amp;rsquo;ve used Wordpress and Weebly for a long time, but have gradually witnessed more and more features put behind a paywall.</description>
     </item>
   </channel>
 </rss>

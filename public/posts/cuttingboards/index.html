@@ -8,7 +8,7 @@
 
 <title>
     
-    ESSAR: My Debut Album | SHILPA
+    Building This Website | SHXLPA
     
 </title>
 
@@ -33,7 +33,7 @@
         
 
 <div class="header">
-    <h1 class="header-title">SHILPA</h1>
+    <h1 class="header-title">SHXLPA</h1>
 
     <div class="flex">
         
@@ -42,19 +42,19 @@
         
         <p class="small ">
             <a href="/">
-                /home
+                /Home
             </a>
         </p>
         
         <p class="small ">
             <a href="/posts">
-                /posts
+                /Projects
             </a>
         </p>
         
         <p class="small ">
             <a href="/about">
-                /about
+                /Contact
             </a>
         </p>
         
@@ -78,7 +78,7 @@
     <a href="/posts/">Posts</a>
     <span class="breadcrumbs-separator"> > </span>
     
-    <a class="breadcrumbs-current" href="/posts/cuttingboards/">ESSAR: My Debut Album</a>
+    <a class="breadcrumbs-current" href="/posts/cuttingboards/">Building This Website</a>
 </div>
 
 
@@ -88,7 +88,7 @@
 
     
 
-    <h1 class="single-title">ESSAR: My Debut Album</h1>
+    <h1 class="single-title">Building This Website</h1>
     
 
     
@@ -116,26 +116,37 @@
   <div class="single-content">
     <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
-<p>I recently released my debut album, a labor of love!</p>
-<p>
+<h2 id="an-experiment-in-web-dev-hugo--vercel">An experiment in web dev: hugo + vercel</h2>
+<p>I coded up my own site - here&rsquo;s how and why.</p>
+<p>I wanted a newsletter dedicated to my projects so I could keep my professional network updated on my latest activities. Given this, I could only see it happening if my newsletter was something I could own. I&rsquo;ve used Wordpress and Weebly for a long time, but have gradually witnessed more and more features put behind a paywall. Substack is new-ish (not guaranteed to last), Squarespace makes you pay for everything, and my Twitter account keeps getting spammed by bots. I was left a little lost&hellip; where on earth should I host my stuff?</p>
+<p>I&rsquo;m approaching this from the decades long timeline. I want this to be one of those kinda crappy outdated sites you can encounter 10 years later, where you&rsquo;re surprised it&rsquo;s still up, but it hasn&rsquo;t crashed yet.</p>
+<p>It made the most sense to download a framework, host my site locally, and depend on a few highly niche services that I&rsquo;m confident I can replace if they go down (in this case, Github and Vercel - and Github isn&rsquo;t even necessary). Here&rsquo;s how I did it.</p>
+<figure><img src="/posts/cuttingboards/images/hugo.jpg">
+</figure>
 
+<p>I used Hugo, a HTML/CSS framework, to host my site. Hugo essentially delivers a wrapper over HTML and CSS and creates a pipeline between Markdown files (the bane of the content on a Hugo site) and the actual HTML/CSS encoding. I&rsquo;ll never have to touch the root code if I don&rsquo;t want to, but it&rsquo;s all mine to change if I desire.</p>
+<p>This site is based on the <a href="https://github.com/tomfran/typo?tab=readme-ov-file">typo</a> theme. After following the Hugo <a href="https://gohugo.io/getting-started/quick-start/">quickstart</a> guide and adapting it for the <a href="https://github.com/tomfran/typo?tab=readme-ov-file#1-setup">specific setup instructions</a> provided in Typo&rsquo;s Github Repository, I had a locally hosted website.
+I learned that Hugo has markdown <a href="https://gohugo.io/content-management/shortcodes/">shortcodes</a> that you can use to embed Youtube videos, images and more. The ease of this is crazy, because on some website providers these services are paywalled. I was surprised at how easy it actually is: Youtube&rsquo;s API is probably free for anyone to use, and here Hugo is making the code for that super easy while everyone else makes that a &ldquo;premium service&rdquo;. Doing things yourself is so fun!</p>
+<pre><code>brew install hugo
+hugo new site quickstart
+cd quickstart
+git init
+git submodule add --depth=1 https://github.com/tomfran/typo.git themes/typo
+git submodule update --init --recursive
+echo &quot;theme = 'typo'&quot; &gt;&gt; hugo.toml
+hugo server
+</code></pre>
+<figure><img src="/posts/cuttingboards/images/vercel.jpg">
+</figure>
 
+<p>Hugo creates a &ldquo;quickstart&rdquo; folder enclosing the contents of your website. After converting this folder to a <a href="https://github.com/shxlpa/shilpsite">Github repo</a>, then trying and failing to turn it into a Github pages site, I gave up and looked into Vercel (way faster, can&rsquo;t recommend enough). All I had to do was install the Vercel CLI, run one command, then follow the resulting prompts:</p>
+<pre><code>sudo npm install -g vercel
+vercel
+</code></pre>
+<figure><img src="/posts/cuttingboards/images/vercelcode.jpg">
+</figure>
 
-
-
-
-
-
-
-
-<figure class="">
-
-    <div>
-        <img loading="lazy" alt="ESSAR album cover" src=" images/ESSAR_COVER.jpg">
-    </div>
-
-    
-</figure></p>
+<p>I now have a shiny new website in my hands. This thing is <em>clean</em>. There&rsquo;s a lot of aesthetic work to be done, and I still have to build in subscription functionality so that I can email my network every time I post. Luckily there are free APIs for that :)</p>
 
     
   </div>
@@ -155,10 +166,7 @@
     </div>
 
     <footer>
-      <p>Powered by
-    <a href="https://gohugo.io/">Hugo</a>
-    and
-    <a href="https://github.com/tomfran/typo">tomfran/typo</a>
+      <p> infused with magic, &lt;3 & music from california
 </p>
 
 
