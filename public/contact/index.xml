@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contacts on SHXLPA</title>
+    <link>http://localhost:1313/contact/</link>
+    <description>Recent content in Contacts on SHXLPA</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 04 Aug 2024 21:07:54 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/contact/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/contact/contact/</link>
+      <pubDate>Sun, 04 Aug 2024 21:07:54 -0700</pubDate>
+      <guid>http://localhost:1313/contact/contact/contact/</guid>
+      <description>you can email me at&#xA;shilpa dot padiki dot rao at gmail&#xA;texts are welcome&#xA;but you&amp;rsquo;ll have to email me to get my number&#xA;as it feels irresonsible to post that on the internet</description>
+    </item>
+  </channel>
+</rss>

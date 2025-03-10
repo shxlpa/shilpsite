@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on SHXLPA</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on SHXLPA</description>
+    <title>Home on SHXLPA</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home on SHXLPA</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Aug 2024 21:07:54 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>An Adventure In Battery Engineering</title>
-      <link>http://localhost:1313/posts/arc/batteryengineering/</link>
-      <pubDate>Sun, 04 Aug 2024 21:07:54 -0700</pubDate>
-      <guid>http://localhost:1313/posts/arc/batteryengineering/</guid>
-      <description>Arc Internship - Summer 2024 I&amp;rsquo;ve been</description>
-    </item>
+    <lastBuildDate>Mon, 27 May 2024 16:58:11 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building This Website</title>
       <link>http://localhost:1313/posts/cuttingboards/</link>

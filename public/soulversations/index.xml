@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Soulversations on SHXLPA</title>
+    <link>http://localhost:1313/soulversations/</link>
+    <description>Recent content in Soulversations on SHXLPA</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 04 Aug 2024 21:07:54 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/soulversations/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Love Notes</title>
+      <link>http://localhost:1313/soulversations/loveletters/loveletters/</link>
+      <pubDate>Sun, 04 Aug 2024 21:07:54 -0700</pubDate>
+      <guid>http://localhost:1313/soulversations/loveletters/loveletters/</guid>
+      <description>I spent my summer springing between work in Torrance and the Sierra Nevada mountain range. Engineering as an artist is tricky; it feels unemotional and inhuman. Trapped in numbers and performance reviews, you start to wonder where we went wrong as a species.&#xA;The mountains were my respite this summer. They provoked curiosity and art out of me each time I went. It was like filling up at a gas station at the start of each week.</description>
+    </item>
+  </channel>
+</rss>
